@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini - Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&amp;family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2><i class="fas fa-feather"></i> Nandini</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Nandini</span></h1>
+            <p class="subtitle">English Graduate | Aspiring Web Developer</p>
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&amp;fit=crop&amp;crop=face" alt="Nandini" class="profile-img">
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>Hello! I am Nandini, holding a Master's in English from DAV College, Ambala City. Currently pursuing Diploma in Computer Application from Hartron, Ambala City. Passionate about blending creativity with technology to craft beautiful web experiences.</p>
+            <p>With strong command over English and growing skills in web development, I love creating user-friendly websites with a touch of elegance.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-edit"></i>
+                <h3>Content Writing</h3>
+                <p>English Proficiency, Creative Writing</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Figma, Aesthetic Layouts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>English Blog Platform</h3>
+                    <p>A responsive blog site for sharing literary articles, built with HTML, CSS, and JS.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn demo-btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Modal -->
+            <div id="blog-modal" class="project-modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h3>English Blog Platform Demo</h3>
+                    <p>Click to toggle blog posts:</p>
+                    <button class="btn toggle-posts">Toggle Posts</button>
+                    <ul class="posts-list">
+                        <li><strong>Post 1:</strong> The Beauty of Words - Exploring literary landscapes.</li>
+                        <li><strong>Post 2:</strong> Digital Poetry - Where tech meets verse.</li>
+                        <li><strong>Post 3:</strong> Writing Tips for Beginners.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Poetry Generator App</h3>
+                    <p>Interactive tool generating poetic lines based on themes, powered by JavaScript.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn demo-btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Poetry Modal -->
+            <div id="poetry-modal" class="project-modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h3>Poetry Generator</h3>
+                    <p>Click to generate a poem:</p>
+                    <button class="btn generate-btn">Generate Poem</button>
+                    <div class="generated-poem">Click generate to see magic!</div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Resume Builder</h3>
+                    <p>Dynamic form to generate customized resumes with preview functionality.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn demo-btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Resume Modal -->
+            <div id="resume-modal" class="project-modal">
+                <div class="modal-content">
+                    <button class="close-modal">&times;</button>
+                    <h3>Resume Builder Demo</h3>
+                    <p>Fill form and preview:</p>
+                    <div class="resume-form">
+                        <input type="text" class="resume-name" placeholder="Your Name">
+                        <textarea class="resume-skills" placeholder="Your Skills"></textarea>
+                        <button class="btn preview-btn">Preview Resume</button>
+                    </div>
+                    <div class="resume-preview">Preview appears here...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <div class="whatsapp-btn">
+            <a href="https://wa.me/+919876543210?text=Hi%20Nandini!%20I%27m%20interested%20in%20your%20portfolio." target="_blank" class="btn whatsapp">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&amp;copy; 2024 Nandini. Made with <i class="fas fa-heart"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
