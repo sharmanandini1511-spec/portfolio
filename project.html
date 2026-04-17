@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini's English Blog</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #6a11cb;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .blog {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .post h2 {
+            color: #6a11cb;
+        }
+
+        .post p {
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            flex: 1;
+        }
+
+        .about, .categories {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .contact {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background: #6a11cb;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background: #2575fc;
+        }
+
+        @media(max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nandini's English Blog</h1>
+    <p>Sharing thoughts, stories & ideas</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="blog">
+        <div class="post">
+            <h2>The Importance of Learning English</h2>
+            <p>English is a global language that connects people from different cultures. Learning English opens doors to education, career opportunities, and communication worldwide.</p>
+        </div>
+
+        <div class="post">
+            <h2>How to Improve Your Vocabulary</h2>
+            <p>Reading books, writing daily, and practicing new words can greatly improve your vocabulary. Consistency is the key to mastering any language.</p>
+        </div>
+
+        <div class="post">
+            <h2>Tips for Better Writing</h2>
+            <p>Start with simple sentences, avoid grammar mistakes, and read your content aloud. Practice makes perfect in writing skills.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="about">
+            <h3>About Me</h3>
+            <p>Hello! I'm Nandini, an English enthusiast who loves writing blogs and sharing ideas.</p>
+        </div>
+
+        <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li>Grammar</li>
+                <li>Vocabulary</li>
+                <li>Writing Tips</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<footer>
+    <p>© 2026 Nandini | English Blog Portfolio</p>
+</footer>
+
+</body>
+</html>
